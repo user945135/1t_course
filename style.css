@@ -1,0 +1,247 @@
+/*----MENU----*/
+
+.body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: #af4c4c;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #d0b4b4;
+    color: white;
+}
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+.active {
+    font-weight: 700;
+    font-size: larger;
+}
+
+/*---------MAIN----------*/
+.content_h1 {
+    text-align: center;
+    margin: 1%;
+}
+
+.div_content_h1_first {
+    background-color: #bd7070;
+    width: 100%;
+    height: 200px;
+    padding: 1%;
+}
+
+.h1_text {
+    text-align: center;
+    margin: 5%;
+}
+
+.content_text {
+    color: #FFFFFF;
+}
+
+/*-----MAIN2-----*/
+
+.content_h2_text {
+    text-align: left;
+    font-size: 32px;
+    margin: auto 5%;
+}
+
+.content_h2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content_h2_title {
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 3%;
+}
+
+.content1_header {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.content1 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1%;
+}
+
+/*-------CARDS WRAP-------*/
+
+.cards_wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1400px;
+    margin: 2% auto;
+}
+
+.one_card_wrapper {
+    display: flex;
+    flex-flow: column;
+    width: 550px;
+    height: 700px;
+    padding: 20px 90px;
+    margin: 15px 0;
+    background-color: #FFFFFF;
+    box-shadow: 5px 20px 50px rgba(177, 16, 16, 0.2);
+    border-radius: 10px;
+}
+
+.image_card {
+    max-width: 400px;
+    max-height: 400px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.card_text {
+    text-align: center;
+}
+
+.card_name {
+    text-align: center;
+    margin: 5%;
+}
+
+
+.card_btn {
+    background: #d05a5a;
+    box-shadow: 5px 10px 20px rgba(173, 53, 53, 0);
+    border-radius: 10px;
+    width: 380px;
+    height: 26px;
+    border: 1px;
+    cursor: pointer;
+    text-align: center;
+
+    transition: all .3s ease;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+}
+
+.card_btn:hover {
+    background: #993131;
+    transform: scale(1.1);
+}
+
+
+/*--------FOOTER---------*/
+
+.footer {
+    width: 100%;
+    background-color: #bd7070;
+    display: block;
+}
+
+.sub_block {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.sub_text {
+    margin: 5%;
+}
+
+.footer_btn {
+    height: 40px;
+    width: 60px;
+    margin: 5%;
+    background: #d0b4b4;
+    box-shadow: 5px 10px 20px rgba(173, 53, 53, 0.2);
+    border-radius: 10px;
+    width: 380px;
+    height: 56px;
+    border: 1px;
+    cursor: pointer;
+
+    transition: all .3s ease;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+}
+
+.footer_btn:hover {
+    background: #FFFFFF;
+    transform: scale(1.1);
+}
+
+.links_title {
+    text-align: center;
+    font-size: medium;
+    opacity: 0.5;
+}
+
+.contact_links {
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    width: 1030px;
+    margin: 30px;
+    list-style: none;
+    margin-right: 114px;
+    margin-left: 113px;
+    height: 48px;
+    letter-spacing: 0.05em;
+    line-height: 26px;
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
